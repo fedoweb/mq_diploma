@@ -206,15 +206,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .trends-cheese {
-    background-image: url("../images/trend2.jpg");
+    background-image: url(. ./images/trend2.jpg");
 }
 
 .trends-camping {
-    background-image: url("../images/trend3.jpg");
+    background-image: url("./images/trend3.jpg");
 }
 
 .trends-lemon {
-    background-image: url("../images/trend4.jpg");
+    background-image: url(/images/trend4.jpg);
 }
 
 .trends-content {
