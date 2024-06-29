@@ -886,8 +886,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Мобильная версия*/
 
-@media (max-width: 640px) ,
-(max-height: 640px) and (orientation: landscape) {
+@media (max-width: 640px) {
 
     .page {
         gap: 44px;
