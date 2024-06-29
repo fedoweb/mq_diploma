@@ -30,9 +30,9 @@
                     <li class="menu-item"><a href="#0" class="menu-item-link hover-inline">контакты</a></li>
                 </ul>
             </nav>
-            <nav class="burger-menu">
-                <img src="images/burger.png" alt="бургер-меню" class="burger-img">
-            </nav>
+            <button class="burger-menu">
+                <span class="visually-hidden">Закрыть</span>
+            </button>
         </section>
 
         <h1 class="header-title">Блог о творчестве, спорте, и образе жизни</h1>
@@ -41,6 +41,7 @@
 
 <section class="trends">
     <h2 class="trends-title section-title"><a href="#0">Сейчас в тренде</a></h2>
+    <div class="trends-line line"></div>
     <section class="trends-items">
         <article class="trends-item tends-garden">
             <div class="trends-content">
@@ -84,8 +85,8 @@
     </section>
 </section>
 
-<main class="main container">
-    <section class="article">
+<section class="content container">
+    <main class="article">
 
         <article class="article-item">
             <section class="img-container">
@@ -202,13 +203,14 @@
             </section>
         </article>
 
-    </section>
+    </main>
 
     <aside class="sidebar">
         <section class="news">
             <h2 class="news-title section-title">
                 <a href="#0" class="news-title-link">новые посты</a>
             </h2>
+            <div class="news-line line"></div>
 
             <article class="news-article">
                 <section class="news-img-container">
@@ -270,7 +272,11 @@
         </section>
 
         <form class="search">
-            <input type="search" class="search-text form-focus" placeholder="Найти..." required>
+            <label class="form-search" for="search">
+                <span class="visually-hidden">Поле ввода текста для поиска</span>
+                <input type="search" class="search-text form-focus" id="search" placeholder="Найти..." required>
+            </label>
+
             <button class="search-button hover-btn" type="submit">
                 <span class="visually-hidden">Найти</span>
             </button>
@@ -278,14 +284,20 @@
 
         <form class="form">
             <h2 class="form-title section-title"><a href="#0">рассылка</a></h2>
+            <div class="form-line line"></div>
             <section class="form-elements">
-                <input type="email" class="form-email form-focus" placeholder="Ваш email-адрес" required>
+                <label for="email">
+                    <span class="visually-hidden">Поле ввода email-адреса</span>
+                    <input type="email" class="form-email form-focus" id="email" placeholder="Ваш email-адрес" required>
+                </label>
+
                 <button class="form-button hover-btn">Подписаться</button>
             </section>
         </form>
 
         <section class="tegs">
             <h2 class="tegs-title section-title"><a href="#0">Теги</a></h2>
+            <div class="tegs-line line"></div>
             <ul class="tegs-list">
                 <li><a href="#0" class="tegs-item hover-border">fashion</a></li>
                 <li><a href="#0" class="tegs-item hover-border">music</a></li>
@@ -301,6 +313,7 @@
 
         <nav class="thems">
             <h2 class="thems-title section-title"><a href="#0">Темы</a></h2>
+            <div class="thems-line line"></div>
             <ul class="thems-list">
                 <li class="thems-item">
                     <a class="thems-link hover-color" href="#">Красота</a>
@@ -329,11 +342,12 @@
             </ul>
         </nav>
     </aside>
-</main>
+</section>
 
-<section class="products container">
+<section class="product container">
     <h2 class="product-title section-title"><a href="#0">Наши изделия</a></h2>
-    <div class="products-items">
+    <div class="product-line line"></div>
+    <div class="product-items">
         <article class="product-item">
             <section class="product-img-container">
                 <a href="#0">
@@ -350,13 +364,13 @@
                     Видео о создании
                     <a href="#0" class="product-text-link">здесь.</a>
                 </p>
-                <form class="product-form">
-                    <div class="product-price">
+                <div class="product-price">
+                    <div class="price-container">
                         <p class="old-price">1000 &#8381;</p>
                         <p class="new-price">800 &#8381;</p>
                     </div>
                     <button class="product-btn form-button hover-btn">В магазин</button>
-                </form>
+                </div>
             </section>
 
         </article>
@@ -375,12 +389,12 @@
                 <p class="product-text">Интерьерная рукодельная кукла «Зайчик»,
                     созданию которой посвящена <a href="#0" class="product-text-link">весенняя серия постов</a>
                     в блоге и несколько подкастов.</p>
-                <form class="product-form">
-                    <div class="product-price">
+                <div class="product-price">
+                    <div class="price-container">
                         <p class="new-price">3500 &#8381;</p>
                     </div>
                     <button class="product-btn form-button hover-btn">В магазин</button>
-                </form>
+                </div>
             </section>
 
         </article>
@@ -397,14 +411,14 @@
             <section class="product-content">
                 <h3 class="product-item-title article-title hover-color"><a href="#0">Шестиугольная рамка</a></h3>
                 <p class="product-text">Необычная рамка для украшения дома из видео
-                    <a href="#0" class="product-text-link">«Как сделать рамку из подручных средств за 30 минут.»</a></p>
-                <form class="product-form">
-                    <div class="product-price">
+                    <a href="#0" class="product-text-link hover-inline">«Как сделать рамку из подручных средств за 30 минут.»</a></p>
+                <div class="product-price">
+                    <div class="price-container">
                         <p class="old-price">500 &#8381;</p>
                         <p class="new-price">400 &#8381;</p>
                     </div>
                     <button class="product-btn form-button hover-btn">В магазин</button>
-                </form>
+                </div>
             </section>
 
         </article>
@@ -438,8 +452,13 @@
 </footer>
 
 <section class="popup _hidden">
+
     <div class="popup-content">
+        <button class="popup-close">
+            <span class="visually-hidden">Закрыть</span>
+        </button>
         <h2 class="popup-title section-title">Ваш фидбек</h2>
+        <div class="popup-line line"></div>
         <form class="popup-form">
             <label for="popup-select">Как часто вы заходите на сайт?
                 <select name="popup-select" class="popup-select" id="popup-select">
